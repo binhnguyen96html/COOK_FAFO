@@ -54,7 +54,7 @@ const cookListData = [
       "Pork shoulder and pork belly: Pork belly is the more traditional cut, but you can use pork shoulder for a leaner version. Simply boil it on its own, or with smashed ginger and sliced shallots for a bit more fragrant, then slice thin.",
       "Lettuce: A refreshing addition to Vietnamese spring rolls that everyone loves. ",
       "Optional vegetables and herbs: There are many different vegetables and herbs that can be added to Vietnamese spring rolls. These include but not limited to mint, perilla, sorrel, cilantro, garlic chives, bean sprouts and cucumbers.",
-      "Peanut dipping sauce: Peanut dipping sauce is a traditional accompaniment to Vietnamese spring rolls.",
+      "Peanut dipping sauce: Peanut dipping sauce is a traditional accompaniment to Vietnamese spring rolls."
     ],
     rating: 4.5,
     numReviews: 12,
@@ -70,7 +70,7 @@ const cookListData = [
     recipes: [
       "Prepare the broth - Heat the sesame oil in a large pot over medium heat. Add the star anise, garlic, and ginger; heat until fragrant, about 30-60 seconds. Pour in the stock, soy sauce, hoisin sauce, fish sauce, lime juice, jalapeño pepper, and chicken. Bring to a boil, then reduce the heat to low and simmer for 15-20 minutes uncovered.",
       "Cook the noodles - according to the package instructions. Divide them between four serving bowls and ladle the hot broth over the noodles.",
-      "Garnish and serve - Garnish with lime, cilantro, Thai basil, and bean sprouts as desired.",
+      "Garnish and serve - Garnish with lime, cilantro, Thai basil, and bean sprouts as desired."
     ],
     rating: 4.5,
     numReviews: 12,

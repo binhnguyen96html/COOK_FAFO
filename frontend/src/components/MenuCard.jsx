@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const MenuCard = ({ menu }) => {
   return (
     <>
-      <Link to={`menu-detail/${menu._id}`}>
+      <div>
         <div
           className=" bg-white border border-gray-200 rounded-lg shadow
          w-80 h-[450px] grid grid-rows-2"
@@ -27,7 +27,7 @@ const MenuCard = ({ menu }) => {
             </p>
           </div>
         </div>
-      </Link>
+      </div>
     </>
   );
 };

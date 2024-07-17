@@ -52,11 +52,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app',
     'rest_framework',
     'corsheaders',
     'whitenoise.runserver_nostatic',
-    'menus'
+    'menus',
+    'products'
 ]
 
 MIDDLEWARE = [

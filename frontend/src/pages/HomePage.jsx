@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import CarouselComponent from '../components/CarouselComponent';
-import cookListData from '../data/cookListData.js';
+// import cookListData from '../data/cookListData.js';
 import products from '../data/data.js';
 import MenuCard from '../components/MenuCard.jsx';
 import ProductCard from '../components/ProductCard.jsx';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   const [menusData, setMenusData] = useState([]);
@@ -13,7 +14,7 @@ const HomePage = () => {
     axios.get('https://7ycm0igoz1.execute-api.us-west-1.amazonaws.com/menus')
     .then((res) => {
       setMenusData(res.data);
-      console.log(menusData)
+      // console.log(menusData)
     })
     .catch((err) => console.error(err));
   }, []);
@@ -36,7 +37,9 @@ const HomePage = () => {
           ) : ( */}
           <div className="flex gap-4 h-[480px] hover:overflow-auto scrollbar-thin">
             {menusData.map((menu, idx) => (
-              <MenuCard key={`menu_${idx}`} menu={menu} />
+              <Link to={`menu-detail/${idx}`} key={`menu_${idx}`} >
+                <MenuCard menu={menu} />
+              </Link>
             ))}
           </div>
           {/* )} */}

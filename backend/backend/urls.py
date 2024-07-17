@@ -15,21 +15,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-# from django.conf.urls import url
-from app.views import *
+from django.urls import include, path
 from django.conf import settings # new
 from  django.conf.urls.static import static #new
 
-from menus.views import *
-
-
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', ReactView.as_view(), name='anything'),
-    path('<int:pk>', ReactView.as_view(), name='react_retrieve_update_delete'),
-    path('menus', ReactView.as_view(), name='menus')
+    path('api/', include('menus.urls')),
+    path('api/', include('products.urls')),
 ]
 
 if settings.DEBUG:

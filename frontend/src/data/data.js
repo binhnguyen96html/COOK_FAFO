@@ -7,11 +7,11 @@ const products = [
       "For dishes needing an extra kick, Mama La’s Spicy Beef Broth is a treat for your taste buds. Made with real beef bone, we add flavorful seasonings like fresh lemongrass, annatto seed, paprika, chili, yellow onion, ginger, and garlic. Turn to Mama La’s spicy beef broth for that extra punch of flavor!",
     brand: "Mama La's Kitchen",
     category: "Meals & Entrees",
-    price: 1.99,
+    price: 11.99,
     countInStock: 10,
     rating: 4.5,
     numReviews: 12,
-    cookList: ['bunBoHue']
+    cookList: ["spicyNoodle"]
   },
   {
     _id: "2",
@@ -24,7 +24,7 @@ const products = [
     countInStock: 7,
     rating: 4.0,
     numReviews: 8,
-    cookList: ['bunBoHue']
+    cookList: ["spicyNoodle"]
   },
   {
     _id: "3",
@@ -37,7 +37,7 @@ const products = [
     countInStock: 5,
     rating: 3,
     numReviews: 12,
-    cookList: ['bunBoHue']
+    cookList: ["spicyNoodle"]
   },
   {
     _id: "4",
@@ -50,7 +50,7 @@ const products = [
     countInStock: 11,
     rating: 5,
     numReviews: 12,
-    cookList: ['bunBoHue']
+    cookList: ["spicyNoodle"]
   },
   {
     _id: "5",
@@ -63,7 +63,7 @@ const products = [
     countInStock: 7,
     rating: 3.5,
     numReviews: 10,
-    cookList: ['bunBoHue']
+    cookList: ["spicyNoodle"]
   },
   {
     _id: "6",
@@ -76,7 +76,7 @@ const products = [
     countInStock: 0,
     rating: 4,
     numReviews: 12,
-    cookList: ['bunBoHue']
+    cookList: ["spicyNoodle"]
   },
 
   {
@@ -90,7 +90,7 @@ const products = [
     countInStock: 10,
     rating: 4,
     numReviews: 12,
-    cookList: ['bunBoHue']
+    cookList: ["spicyNoodle"]
   },
   {
     _id: "10",
@@ -103,7 +103,7 @@ const products = [
     countInStock: 10,
     rating: 4,
     numReviews: 12,
-    cookList: ['bunBoHue']
+    cookList: ["spicyNoodle"]
   },
   {
     _id: "11",
@@ -116,7 +116,7 @@ const products = [
     countInStock: 10,
     rating: 4,
     numReviews: 12,
-    cookList: ['bunBoHue']
+    cookList: ["spicyNoodle"]
   },
 ];
 

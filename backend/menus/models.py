@@ -2,7 +2,8 @@
 from django.db import models
 
 # Create your models here.
-class React(models.Model):
+class Menus(models.Model):
+  id = models.AutoField(primary_key=True)
   name = models.CharField(max_length=200)
   image = models.JSONField()
   category = models.CharField(max_length=100)

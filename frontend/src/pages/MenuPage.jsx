@@ -21,16 +21,16 @@ const MenuPage = () => {
   // const [menuKeyInput, setMenuKeyInput] = useState('');
   const { id: menu_id } = useParams();
   const [menusData, setMenusData] = useState([]);
-  const [menu, setMenu] = useState({})
+
 
   useEffect(() => {
     axios.get('https://7ycm0igoz1.execute-api.us-west-1.amazonaws.com/menus')
     .then((res) => {
       setMenusData(res.data);
-      console.log('data: ', menusData[menu_id])
+      // console.log(menusData)
     })
     .catch((err) => console.error(err));
-  }, []);
+  }, [menusData.length]);
 
 
 
@@ -64,17 +64,17 @@ const MenuPage = () => {
   return (
     <>
       <div className="mt-16 py-3">
-        {/* <div className="py-3">
-          <BreadcrumbComponent category={menu.category} />
-        </div> */}
+        <div className="py-3">
+         {menusData.length > 0 && <BreadcrumbComponent category={menusData[menu_id]?.category} />}
+        </div>
 
         <div className="md:grid md:grid-cols-6 gap-8">
           <div className="col-span-4">
-            {/* <CarouselComponent images={menu.image} /> */}
+            {menusData.length > 0 && <CarouselComponent images={menusData[menu_id]?.image} />}
 
-            {/* <div className="mt-6">
-              {menusData &&
-                menusData[menu_id].recipes.map((step, i) => (
+            <div className="mt-6">
+              {menusData && 
+                menusData[menu_id]?.recipes.map((step, i) => (
                   <div className="text-justify mt-2" key={i}>
                     <h5 className="font-semibold text-gray-900 text-sm">
                       Step: {i + 1}
@@ -82,7 +82,7 @@ const MenuPage = () => {
                     <p className="text-sm text-gray-800">{step}</p>
                   </div>
                 ))}
-            </div> */}
+            </div>
           </div>
 
           <div
@@ -108,14 +108,14 @@ const MenuPage = () => {
               </div>
 
               <div>
-                {/* {products.map((pro, idx) => (
+                {products.map((pro, idx) => (
                   <div key={`product_${idx}`} className="mt-2">
                     <ProductCard
                       product={pro}
                       // clickHandler={addToCartHandler}
                     />
                   </div>
-                ))} */}
+                ))}
               </div>
               {/* </>
               )} */}

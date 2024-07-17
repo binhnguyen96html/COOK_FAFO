@@ -1,7 +1,8 @@
 from rest_framework import serializers
 from .models import *
 
-class ReactSerializer(serializers.ModelSerializer):
+class MenusSerializer(serializers.ModelSerializer):
   class Meta:
-    model = React
-    fields = ['name', 'image', 'category', 'description' ,'recipes', 'rating', 'numReviews', 'cookList']
+    model = Menus
+    # fields = ['id', 'name', 'image', 'category', 'description' ,'recipes', 'rating', 'numReviews', 'cookList']
+    fields = '__all__'
