@@ -5,13 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
-  Link,
   RouterProvider,
   createRoutesFromElements,
   Route
 } from "react-router-dom";
 import MenuPage from './pages/MenuPage';
 import HomePage from './pages/HomePage';
+import ProductsListPage from './pages/ProductsListPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -33,6 +33,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<App/>} >
       <Route index={true} path='/' element={<HomePage />} />
       <Route path='/menu-detail/:id' element={<MenuPage />} />
+      <Route path='/products-list-page' element={<ProductsListPage />} />
     </Route>
   )
 );

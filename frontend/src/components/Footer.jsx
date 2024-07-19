@@ -15,7 +15,7 @@ const Footer = () => {
                     className="h-8 me-3"
                     alt="Logo"
                   />
-                  <span className="self-center text-2xl font-semibold text-green-500 whitespace-nowrap ">
+                  <span className="self-center text-2xl font-semibold text-green-800 whitespace-nowrap ">
                     COOK-FAFO
                   </span>
                 </div>

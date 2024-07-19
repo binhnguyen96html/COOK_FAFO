@@ -1,19 +1,32 @@
-import { Link } from 'react-router-dom';
+import { MdOutlineDelete } from 'react-icons/md';
+import { CiEdit } from 'react-icons/ci';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onConfirmDelete, onOpenEditModal }) => {
+  // console.log(product)
   return (
     <>
       <div>
-        <div className=" bg-white border border-gray-200 rounded-lg shadow w-80 h-[450px] overflow-hidden">
-          <Link to='#'>
-            <div className="rounded-t-lg overflow-hidden h-64">
-              <img
-                className="hover:scale-105 duration-75 transition-all h-full"
-                src={`/img/${product.image}`}
-                alt={product.name}
-              />
-            </div>
-          </Link>
+        <div className="relative bg-white border border-gray-200 rounded-lg shadow w-80 h-[450px] overflow-hidden">
+          <CiEdit
+            onClick={() => onOpenEditModal(product.id)}
+            className="absolute top-3 right-10 z-20 text-white hover:text-gray-700 duration-75 transition-colors bg-gray-300 rounded-full w-6 h-6 p-1"
+          />
+
+          <MdOutlineDelete
+            onClick={() => onConfirmDelete(product.id)}
+            className="absolute top-3 right-3 z-20 text-white hover:text-gray-700 duration-75 transition-colors bg-gray-300 rounded-full w-6 h-6 p-1"
+          />
+          
+
+          {/* <Link to='#'> */}
+          <div className="rounded-t-lg overflow-hidden h-64">
+            <img
+              className="hover:scale-105 duration-75 transition-all h-full"
+              src={`/img/${product.image[0]}`}
+              alt={product.name}
+            />
+          </div>
+          {/* </Link> */}
 
           <div className="p-5 grid grid-rows-6 h-[350px]">
             <div className="row-span-1">
@@ -80,14 +93,13 @@ const ProductCard = ({ product }) => {
               <span className="text-xl font-bold text-gray-900 dark:text-white">
                 ${product.price}
               </span>
-              <Link
+              <button
                 to="#"
                 className="text-white bg-red-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center 
                 hover:bg-red-800 duration-75 transition-colors"
-                // onClick={() => clickHandler([product._id])}
               >
                 Add to cart
-              </Link>
+              </button>
             </div>
           </div>
         </div>

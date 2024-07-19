@@ -16,7 +16,7 @@ const products = [
   {
     _id: "2",
     name: "3 Mien Bun Tuoi Rice Vermicelli 908 g",
-    image: "dry_noodle.png",
+    image: ["dry_noodle.png"],
     description: "3 Mien Rice Vermicelli",
     brand: "3 Mien",
     category: "Noodles",

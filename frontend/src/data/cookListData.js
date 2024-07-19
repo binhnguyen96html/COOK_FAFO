@@ -34,7 +34,7 @@ const cookListData = [
       "Prepare the Broken Rice - Rinse the broken rice thoroughly in cold water until the water runs clear. In a saucepan, combine the rinsed broken rice with 2 cups of water. Bring to a boil over medium heat, then reduce the heat to low, cover with a lid, and let it simmer for about 15-20 minutes or until the rice is tender and the water is absorbed.",
       "Grill the pork chops: Preheat your grill or grill pan over medium-high heat. Remove the marinated pork chops from the refrigerator and let them sit at room temperature for about 30 minutes before cooking. This helps the meat cook more evenly.",
       "Prepare Pickled Vegetables (Do Chua) - In a bowl, combine warm water, rice vinegar, sugar, and salt. Stir until the sugar and salt are dissolved. Add the julienned carrots and daikon radish to the vinegar mixture, ensuring they are submerged. Let the vegetables sit in the pickling liquid for at least 30 minutes before using. They can be prepared ahead of time and stored in the refrigerator.",
-      "Assemble The Dish - Arrange a portion of the cooked broken rice on a plate. Next, top the rice with the grilled pork slices, pickled vegetables, sliced cucumber, sliced tomatoes, and fresh herbs. Then garnish with fried shallots (if using) and thinly sliced scallions. Finally, sprinkle Vietnamese dipping sauce on top and enjoy.",
+      "Assemble The Dish - Arrange a portion of the cooked broken rice on a plate. Next, top the rice with the grilled pork slices, pickled vegetables, sliced cucumber, sliced tomatoes, and fresh herbs. Then garnish with fried shallots (if using) and thinly sliced scallions. Finally, sprinkle Vietnamese dipping sauce on top and enjoy."
     ],
     rating: 4.5,
     numReviews: 12,
@@ -62,7 +62,7 @@ const cookListData = [
   },
   {
     _id: 4,
-    name: "Vietnamese Spring Roll (Pho Ga)",
+    name: "Vietnamese Chicken Noodle Soup (Pho Ga)",
     image: ["chickenPho_1.png"],
     category: "Cook-List",
     description:
